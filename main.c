@@ -117,7 +117,7 @@ int main() {
                             break;
 
                         case 3: { // Atualizar
-                            int atualizado = atualizarProfessor(qtdProfessores, professores);
+                            int atualizado = atualizarProfessor(qtdProfessores, professores, matricula);
                             if (atualizado) {
                                 printf("Professor atualizado com sucesso!\n");
                             } else {
@@ -126,7 +126,7 @@ int main() {
                             break;
                         }
                         case 4: { // Excluir
-                            int excluido = excluirProfessor(qtdProfessores, professores);
+                            int excluido = excluirProfessor(&qtdProfessores, professores, matricula);
                             if (excluido) {
                                 printf("Professor excluído com sucesso!\n");
                                 qtdProfessores--;

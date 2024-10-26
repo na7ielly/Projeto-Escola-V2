@@ -14,12 +14,13 @@ typedef struct {
     Semestre periodo;
 } Disciplina;
 
-int cadastrarDisciplina(int qtdDisciplinas, Disciplina disciplinas[], int maxDisciplinas);
+int cadastrarDisciplina(int qtdDisciplinas, Disciplina disciplinas[], int maxDisciplinas, Professor professores[], int qtdProfessores);
 void listarDisciplinas(int qtdDisciplinas, Disciplina disciplinas[]);
 int excluirDisciplina(int qtdDisciplinas, Disciplina disciplinas[]);
 int atualizarDisciplina(int qtdDisciplinas, Disciplina disciplinas[]);
 int obtemOpcaoDisciplina();
 int buscarDisciplinaPorNomeProfessor(int qtdDisciplinas, Disciplina disciplinas[], char nomeDisciplina[], int matricula);
 int encontraCodigoDisciplina(int codigo, int qtdDisciplinas, Disciplina disciplinas[]);
+int encontraDisciplinaProfessor(int qtdDisciplinas, Disciplina disciplinas[], char nomeDisciplina[]);
 
 #endif
